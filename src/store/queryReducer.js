@@ -1,12 +1,12 @@
-const initialState = { query: '' };
+const initialState = { value: '' };
 
-function accountReducer(state = initialState, action) {
+function queryReducer(state = initialState, action) {
   switch (action.type) {
     case "set":
-      return { ...state, query: action.payload };
+      return { ...state, value: action.payload };
     default:
       return state;
   }
 }
 
-export default accountReducer;
+export default queryReducer;

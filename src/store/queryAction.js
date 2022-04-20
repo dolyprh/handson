@@ -1,8 +1,8 @@
-function setQuery(amount) {
+function setQuery(value) {
     return {
       type: "set",
-      payload: amount
+      payload: value
     };
   }
   
-  export default setQuery;
+  export { setQuery };
